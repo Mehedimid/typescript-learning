@@ -1,19 +1,18 @@
 {
+    // ======================= starts =====================
 
-    type UserInfo = {
-        name: string,
-        age: number,
-        role?: "admin" | "user" | "guest" // Optional literal type
-    }
+    const findLargestNumber = (arr : number[]) => { 
+        // let max = arr[0]
+        // for (let i = 1; i < arr.length; i++) {
+        //     if(arr[i] > max){
+        //         max = arr[i]
+        //     }
+        // }
+        // return max
 
-    const logUserInfo = (value:UserInfo)=> {
-        const {name, age, role} = value
-
-        console.log(`Name: ${name}, Age: ${age}, Role: ${role || "guest"}`);
-    };
-    
- // Usage examples
-logUserInfo({ name: "Alice", age: 30, role: "admin" });
-logUserInfo({ name: "Bob", age: 25 }); // role defaults to "guest"
-logUserInfo({ name: "Charlie", age: 40, role: "user" });
+        // return Math.max(...arr)
+     }
+    const result = findLargestNumber([12, 23, 3, 44, 55, 3])
+    console.log(result);
+// ======================= ends =====================
 }

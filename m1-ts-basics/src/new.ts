@@ -1,15 +1,19 @@
 {
 
-const myObject : {
-    firstName : "mehedi hasan asif",
-    secndName? : string,
-    thirdName : string,
-} = {
-    firstName : "mehedi hasan asif",
-    secndName : "mehedi hasan",
-    thirdName : "mehedi asif"
-}
+  const movie = {
+    name : "deadpool",
+    genre : "sci-fi"
+  }
 
-console.log(myObject);
+  console.log(typeof movie);
+  type Tmovie = typeof movie
+
+  interface author {
+    author:string
+  }
+  const newMovie : Tmovie= {
+    name : "avengers" ,
+    genre : "sci-fi", 
+  }
 
 }
