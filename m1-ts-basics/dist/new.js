@@ -1,9 +1,12 @@
 "use strict";
 {
-    const myObject = {
-        firstName: "mehedi hasan asif",
-        secndName: "mehedi hasan",
-        thirdName: "mehedi asif"
+    const movie = {
+        name: "deadpool",
+        genre: "sci-fi"
     };
-    console.log(myObject);
+    console.log(typeof movie);
+    const newMovie = {
+        name: "avengers",
+        genre: "sci-fi",
+    };
 }
